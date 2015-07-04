@@ -14,41 +14,41 @@ public class InsultGenerator
 		System.out.println(prompt);
 		String input = in.nextLine(); 
 		int result = Integer.parseInt(input);
-		if (result >= 1 && result <= 3)
-		{
-			return result;	
-		}
-		else
-		{
+		while (result < 1 || result > 3) {
 			System.out.println("Input must be an integer between 1 and 3!");
-			return getIntInput(prompt);
+			input = in.nextLine();
+			result = Integer.parseInt(input);
 		}
+		return result;
 	}
 	
 	String getStringInput(String prompt)
 	{
 		Input in = new Input();
 		System.out.println(prompt);
-		String input = in.nextLine();
-		return input;
+		return in.nextLine();
 	}
 
 	boolean playAgain()
 	{
 		String input = getStringInput("Would you like to generate another insult? (Y/N)");
 		input = input.toLowerCase();
-		if (input.equals("y") || input.equals("1"))
+		while (true)
 		{
-			return true;
-		}
-		else if (input.equals("n") || input.equals("0"))
-		{
-			return false;
-		}
-		else
-		{
-			System.out.println("INVALID INPUT");
-			return playAgain();
+			if (input.equals("y"))
+			{
+				return true;
+			}
+			if (input.equals("n"))
+			{
+				return false;
+			}
+			else
+			{
+				System.out.println("INVALID INPUT");
+				input = getStringInput("Would you like to generate another insult? (Y/N)");
+				input = input.toLowerCase();
+			}
 		}
 	}
 	
@@ -94,7 +94,7 @@ public class InsultGenerator
 	{
 		int lenSelect = getIntInput("How long would you like your insult to be? \n (1) Short \n (2) Long \n (3) Real Fuckin' Long");
 		generateInsult(lenSelect);
-		if (playAgain() == true)
+		if (playAgain())
 		{
 			main();
 		}
@@ -108,7 +108,7 @@ public class InsultGenerator
 	//Required dressing and red tape
 	public static void main(String[] args) 
 	{
-		System.out.println("Welcome to The Ben Clark Insult Generator�!");
+		System.out.println("Welcome to The Ben Clark Insult Generator!");
 		new InsultGenerator().main();
 	}
 }

@@ -13,8 +13,7 @@ public class Insult
 	{
 		int min = 0;
 	    Random rand = new Random();
-	    int randomNum = rand.nextInt((max - min) + 1) + min;
-	    return randomNum;
+	    return rand.nextInt((max - min) + 1) + min;
 	}
 	
 	public void printInsult()
@@ -24,16 +23,15 @@ public class Insult
 	
 	public void shortInsult()
 	{	
-		SecondWord word = new SecondWord();
-		String string = word.generate(randInt(word.maxPref()), randInt(word.maxSuff()));
-		theinsult = string;
+		Word word = new Word();
+		theinsult = word.generate(randInt(word.maxPref()), randInt(word.maxSuff2()), 2);
 	}
 	
 	public void longInsult()
 	{
 		shortInsult();
-		FirstWord word = new FirstWord();
-		String string = word.generate(randInt(word.maxPref()), randInt(word.maxSuff()));
+		Word word = new Word();
+		String string = word.generate(randInt(word.maxPref()), randInt(word.maxSuff1()), 1);
 		theinsult = string + " " + theinsult;
 	}
 	
