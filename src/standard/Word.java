@@ -20,6 +20,8 @@ public class Word
 		prefixes.add("Fuck");
 		prefixes.add("Cunt");
 		prefixes.add("Poop");
+		prefixes.add("Piss");
+		prefixes.add("Rectum");
 		
 		//SUFFIXES - FIRST WORD
 		firstsuffixes.add("mongling");
@@ -56,6 +58,14 @@ public class Word
 		secondsuffixes.add("cheese");
 		secondsuffixes.add("berry");
 		secondsuffixes.add("sausage");
+		secondsuffixes.add("entrepreneur");
+		secondsuffixes.add("quiche");
+		secondsuffixes.add("faggot");
+		secondsuffixes.add("bumhole");
+		secondsuffixes.add("wad");
+		secondsuffixes.add("muffin");
+		secondsuffixes.add("harvester");
+		secondsuffixes.add("hole");
 	}
 	
 	public String generate(int number1, int number2, int wordno)

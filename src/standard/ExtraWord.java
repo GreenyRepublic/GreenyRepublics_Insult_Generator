@@ -9,6 +9,8 @@ public class ExtraWord {
 	{
 		words.add("Sort of Fuckin' Thing");
 		words.add("Son of a Gun");
+		words.add("Gender Studies Major");
+		words.add("Kebab");
 	}
 	
 	public String generate(int number)
