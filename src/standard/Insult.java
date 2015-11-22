@@ -18,9 +18,11 @@ public class Insult
 	
 	public void printInsult()
 	{
+		System.out.print("\n");
 		System.out.println(theinsult);
+		System.out.print("\n");
 	}
-	
+
 	public void shortInsult()
 	{	
 		Word word = new Word();
