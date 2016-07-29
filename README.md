@@ -1,5 +1,6 @@
 # GreenyRepublic's Insult Generator
 Finally, the biting witticisms of your favourite blonde stick insect are free for the world to enjoy! With the GreenyRepublic Insult Generator you too can be the torment/pride/embarassment of your family dinner table, the bane of your friends, and the comical king of your ex-wife's former co-workers!
+
 The GreenyRepublic Insult Generator dispenses a smoking-hot array of biting putdowns/compliments/wedding invitations of all lengths and sizes, and it's simple to use, just enter the desired length of your insult and off you go!
 
 ------
