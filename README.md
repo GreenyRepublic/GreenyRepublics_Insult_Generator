@@ -6,4 +6,4 @@ The GreenyRepublic Insult Generator dispenses a smoking-hot array of biting putd
 ------
 I wrote this in the Summer of 2015 on a family trip to Rome (started in a Wetherspoons in Gatwick whilst our flight was delayed, finished in a fancy rented AirBNB, take the Wetherspoons bit however you will). We had just learned object-oriented-programming in the second term of university and I wanted to get a bit of Java practise in, but at the same time I didn't want to write something that was dusty and boring like some algorithm implementation or what-have-you. 
 
-So here you are, one day I'd like to make this into a Chrome extension and/or Android App, but we shall see how things go.
+So here you are, one day I'd like to make this into a Chrome extension and/or Android App, but we shall see how things go. Either way please enjoy the generator, and I take absolutely no responsibility for any injury, disownment or excommunication incurred as a result of this app.
